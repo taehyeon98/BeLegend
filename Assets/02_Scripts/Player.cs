@@ -21,10 +21,6 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (playerInfo == null)
-        {
-            return;
-        }
         _rb2D.linearVelocity = new Vector2(_moveInput.x * _playerSpeed, _moveInput.y * _playerSpeed);
     }
 }
